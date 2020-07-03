@@ -12,14 +12,23 @@ Gdy skompilujemy moduły program uruchamiamy wywołując funkcję  trace_server:
 
 Program możemy wykonywać krokowo wykonując kolejno funkcje(z przedrostkiem trace_server:) :
 1) getInput(Alphabet, TransactionSet, Word) w formacie:
+
 	Alphabet = [a1,a2,..,an] (lista znaków alfabetu),
+	
 	TransactionSet = [{a, ”x=x+y”},{b, ”y=z+2y”},…] (lista krotek znaków i ich transakcji),
+	
 	Word = [a1,a1,an,..,a3,a4,...]  (ciąg wywołań operacji);
+	
 2)dependencySet();
+
 3)independencySet();
+
 4)fnf();
+
 5)diekertGraph();
+
 6)fnfFromDiekert();
+
 albo wywołując funkcję trace_server:computeAll(Alphabet, TransactionSet, Word).
 
 W razie wątpliwości należy wywołać funkcję trace_server:help().
